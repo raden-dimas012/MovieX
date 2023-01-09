@@ -6,6 +6,12 @@
 //
 
 import SwiftUI
+import Home
+import Core
+import Favorite
+import About
+import Settings
+import Search
 
 struct ContentView: View {
     @EnvironmentObject var homePresenter: HomePresenter
@@ -16,7 +22,7 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $tabSelection) {
             NavigationStack {
-                HomeView(darkModeEnabled: $darkModeEnabled, presenter: homePresenter)
+                HomeView(darkModeEnabled: darkModeEnabled, presenter: homePresenter)
                     .navigationTitle(Helper.returnNavBarTitle(tabSelection: self.tabSelection))
             }
             .tabItem {
@@ -28,7 +34,7 @@ struct ContentView: View {
             }
             .tag(Tabs.home)
             NavigationStack {
-                SearchView(darkModeEnabled: $darkModeEnabled, presenter: searchPresenter)
+                SearchView(darkModeEnabled: darkModeEnabled, presenter: searchPresenter)
                     .navigationTitle(Helper.returnNavBarTitle(tabSelection: self.tabSelection))
             }
             .tabItem {
@@ -40,7 +46,7 @@ struct ContentView: View {
             }
             .tag(Tabs.search)
             NavigationStack {
-                FavoriteView(darkModeEnabled: $darkModeEnabled, presenter: favoritePresenter)
+                FavoriteView(darkModeEnabled: darkModeEnabled, presenter: favoritePresenter)
                     .navigationTitle(Helper.returnNavBarTitle(tabSelection: self.tabSelection))
             }
             .tabItem {

@@ -6,6 +6,10 @@
 //
 
 import SwiftUI
+import Home
+import Core
+import Search
+import Favorite
 
 @main
 struct MovieXApp: App {
