@@ -38,9 +38,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2DB4BF3392FE1C595A17CA5A /* Pods-Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search.release.xcconfig"; path = "Target Support Files/Pods-Search/Pods-Search.release.xcconfig"; sourceTree = "<group>"; };
+		2DB4BF3392FE1C595A17CA5A /* Pods-Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Search/Pods-Search.release.xcconfig"; sourceTree = "<group>"; };
 		75C2E76E616A07B26B681DCC /* Pods_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8E1A00420FE4E7124E83627 /* Pods-Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search.debug.xcconfig"; path = "Target Support Files/Pods-Search/Pods-Search.debug.xcconfig"; sourceTree = "<group>"; };
+		C8E1A00420FE4E7124E83627 /* Pods-Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Search.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Search/Pods-Search.debug.xcconfig"; sourceTree = "<group>"; };
 		E9202EDD296ADC7700D8E0EB /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9202EE0296ADC7700D8E0EB /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
 		E9202EE1296ADC7700D8E0EB /* Search.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Search.docc; sourceTree = "<group>"; };

@@ -35,8 +35,8 @@
 
 /* Begin PBXFileReference section */
 		37221070564BBE04F6073C4A /* Pods_MovieXUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieXUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8360E21ECF95A8AB2C6B83F4 /* Pods-MovieXUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieXUI.debug.xcconfig"; path = "Target Support Files/Pods-MovieXUI/Pods-MovieXUI.debug.xcconfig"; sourceTree = "<group>"; };
-		BEAC25F9C6B0A46F3121AA11 /* Pods-MovieXUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieXUI.release.xcconfig"; path = "Target Support Files/Pods-MovieXUI/Pods-MovieXUI.release.xcconfig"; sourceTree = "<group>"; };
+		8360E21ECF95A8AB2C6B83F4 /* Pods-MovieXUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieXUI.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-MovieXUI/Pods-MovieXUI.debug.xcconfig"; sourceTree = "<group>"; };
+		BEAC25F9C6B0A46F3121AA11 /* Pods-MovieXUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieXUI.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-MovieXUI/Pods-MovieXUI.release.xcconfig"; sourceTree = "<group>"; };
 		E9202E76296AB8A300D8E0EB /* MovieXUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieXUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9202E79296AB8A300D8E0EB /* MovieXUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieXUI.h; sourceTree = "<group>"; };
 		E9202E7A296AB8A300D8E0EB /* MovieXUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MovieXUI.docc; sourceTree = "<group>"; };

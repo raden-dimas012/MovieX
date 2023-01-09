@@ -15,7 +15,7 @@ target 'MovieX' do
 end
 
 target 'Core' do
-  project '../Core/Core' 
+  project 'Core/Core' 
 # Pods for Core
   pod 'RealmSwift'
   pod 'SwiftLint'
@@ -23,7 +23,7 @@ target 'Core' do
 end
 
 target 'MovieXUI' do 
-  project '../Commons/MovieXUI/MovieXUI' 
+  project 'Commons/MovieXUI/MovieXUI' 
 # Pods for MovieXUI
   pod 'lottie-ios', '~> 4.0.1'
   pod 'SwiftLint'
@@ -31,7 +31,7 @@ target 'MovieXUI' do
 end
 
 target 'Home' do 
-  project '../Modules/Home/Home' 
+  project 'Modules/Home/Home' 
 # Pods for Home
   pod 'lottie-ios', '~> 4.0.1'
   pod 'SwiftLint'
@@ -39,7 +39,7 @@ target 'Home' do
 end
 
 target 'Search' do 
-  project '../Modules/Search/Search' 
+  project 'Modules/Search/Search' 
 # Pods for Search
   pod 'lottie-ios', '~> 4.0.1'
   pod 'SwiftLint'
@@ -47,7 +47,7 @@ target 'Search' do
 end
 
 target 'Favorite' do 
-  project '../Modules/Favorite/Favorite' 
+  project 'Modules/Favorite/Favorite' 
 # Pods for Favorite
   pod 'lottie-ios', '~> 4.0.1'
   pod 'SwiftLint'
@@ -55,19 +55,19 @@ target 'Favorite' do
 end
 
 target 'Settings' do 
-  project '../Modules/Settings/Settings' 
+  project 'Modules/Settings/Settings' 
 # Pods for Settings
   pod 'SwiftLint'
 end
 
 target 'About' do 
-  project '../Modules/About/About' 
+  project 'Modules/About/About' 
 # Pods for About
   pod 'SwiftLint'
 end
 
 target 'Detail' do 
-  project '../Modules/Detail/Detail' 
+  project 'Modules/Detail/Detail' 
 # Pods for Detail
   pod 'SwiftLint'
   pod 'Kingfisher'
