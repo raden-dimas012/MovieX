@@ -1,29 +1,21 @@
 workflows:
-  moviex-workflow: # workflow ID
-    name: moviex-workflow # workflow name
-    environment:
+  movix-workflow:
+    name: moviex_workflow
+      vars:
+        XCODE_WORKSPACE: "MovieX.xcworkspace"
+        XCODE_SCHEME: "Moviex"
       xcode: latest
       cocoapods: default
-      vars:
-          XCODE_PROJECT: "MovieX.xcworkspace"
-          XCODE_SCHEME: "MovieX"
+    triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: main
+          include: true
+          source: true
     scripts:
-      - name: Run tests
+      - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
         script: |
-          xcodebuild \
-          -project "$XCODE_PROJECT" \
-          -scheme "$XCODE_SCHEME" \
-          -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 11,OS=16.1' \
-          clean build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-      - name: Build debug app
-        script: |
-          xcodebuild build -project "$XCODE_PROJECT" \
-          -scheme "$XCODE_SCHEME" \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+                    keychain initialize
     artifacts:
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-    publishing:
-      email:
-        recipients:
-          - dimacode012@gmail.com
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
