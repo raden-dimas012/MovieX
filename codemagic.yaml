@@ -4,7 +4,7 @@ workflows:
     scripts:
       name: CI CD Started
       script: echo "Welcome"
-   publishing:
+    publishing:
       email:
         recipients:
           - dimascode012@gmail.com
