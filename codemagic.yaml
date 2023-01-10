@@ -5,7 +5,7 @@ workflows:
       xcode: latest
       cocoapods: default
       vars:
-          XCODE_PROJECT: "MovieX.xcworkspace"
+          XCODE_WORKSPACE: "MovieX.xcworkspace"
           XCODE_SCHEME: "MovieX"
     scripts:
       - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
@@ -15,11 +15,8 @@ workflows:
         script: agvtool new-version -all $(($BUILD_NUMBER +1))
       - name: Set up code signing settings on Xcode project
         script: xcode-project use-profiles
-      - name: Build debug app
-        script: |
-          xcodebuild build -project "$XCODE_PROJECT" \
-          -scheme "$XCODE_SCHEME" \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+      - name: Build ipa for distribution
+        script: xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME"
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
     publishing:
