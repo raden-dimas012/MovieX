@@ -1,8 +1,8 @@
 //
-//  MovieListCardView.swift
+//  FavoriteListCardView.swift
 //  MovieX
 //
-//  Created by Raden Dimas on 10/12/22.
+//  Created by Raden Dimas on 10/01/23.
 //
 
 import SwiftUI
@@ -10,7 +10,7 @@ import Kingfisher
 import Core
 import Common
 
-public struct MovieListCardView: View {
+public struct FavoriteListCardView: View {
     let movie: MovieModel
     public init(movie: MovieModel) {
         self.movie = movie

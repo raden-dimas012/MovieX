@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Core
+import Core 
 
 public struct CustomErrorView: View {
     let title: String

@@ -6,12 +6,8 @@
 //
 
 import SwiftUI
-import Home
 import Core
-import Favorite
-import About
-import Settings
-import Search
+import Common
 
 struct ContentView: View {
     @EnvironmentObject var homePresenter: HomePresenter

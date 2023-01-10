@@ -2,28 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Commons/Common/Common.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Commons/MovieXUI/MovieXUI.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Core/Core.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/About/About.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/Detail/Detail.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/Favorite/Favorite.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/Home/Home.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/Search/Search.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Modules/Settings/Settings.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:MovieX.xcodeproj">
