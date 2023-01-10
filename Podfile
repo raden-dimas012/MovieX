@@ -1,6 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '16.1'
-source 'https://github.com/raden-dimas012/CorePodSpecsMovieX'
+source 'https://github.com/raden-dimas012/CorePodspecMovieX'
+#source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   workspace 'MovieX'
@@ -12,7 +14,9 @@ target 'MovieX' do
   pod 'lottie-ios', '~> 4.0.1'
   pod 'SwiftLint'
   pod 'Kingfisher'
+  #pod 'Core'
   pod 'Core', :git => 'https://github.com/raden-dimas012/CoreMovieX.git'
+
 end
 
 target 'Common' do 
@@ -20,6 +24,7 @@ target 'Common' do
 # Pods for Common
   pod 'SwiftLint'
   pod 'RealmSwift'
+  #pod 'Core'
   pod 'Core', :git => 'https://github.com/raden-dimas012/CoreMovieX.git'
 end
 
@@ -29,6 +34,7 @@ target 'MovieXUI' do
   pod 'lottie-ios', '~> 4.0.1'
   pod 'SwiftLint'
   pod 'Kingfisher'
+  #pod 'Core'
   pod 'Core', :git => 'https://github.com/raden-dimas012/CoreMovieX.git'
 end
 
