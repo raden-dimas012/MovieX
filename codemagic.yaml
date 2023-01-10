@@ -1,21 +1,21 @@
 workflows:
-  movix-workflow:
-    name: moviex_workflow
-      vars:
+    movix-workflow:
+        name: moviex_workflow
+        vars:
         XCODE_WORKSPACE: "MovieX.xcworkspace"
         XCODE_SCHEME: "Moviex"
-      xcode: latest
-      cocoapods: default
+        xcode: latest
+        cocoapods: default
     triggering:
-      events:
+        events:
         - push
-      branch_patterns:
+        branch_patterns:
         - pattern: main
-          include: true
-          source: true
+            include: true
+            source: true
     scripts:
-      - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
+        - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
         script: |
                     keychain initialize
     artifacts:
-      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+        - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
