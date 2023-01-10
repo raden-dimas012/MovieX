@@ -15,7 +15,7 @@ workflows:
           source: true
     scripts:
         - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
-        script: |
+          script: |
                     keychain initialize
     artifacts:
         - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
