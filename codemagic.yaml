@@ -8,18 +8,20 @@ workflows:
           XCODE_WORKSPACE: "MovieX.xcworkspace"
           XCODE_SCHEME: "MovieX"
     scripts:
-      - name: Set up keychain to be used for code signing using Codemagic CLI 'keychain' command
+      - name: Install CocoaPods dependencies
         script: |
-                    keychain initialize
-      - name: Increment build number
-        script: agvtool new-version -all $(($BUILD_NUMBER +1))
-      - name: Set up code signing settings on Xcode project
-        script: xcode-project use-profiles
-      - name: Build ipa for distribution
+          pod install --repo-update
+      - name: Build the .app
         script: |
-                 xcode-project build-ipa \
-                 --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-                 --scheme "$XCODE_SCHEME"
+          xcodebuild build \
+            -workspace "$XCODE_WORKSPACE" \
+            -scheme "$XCODE_SCHEME" \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 11 Pro,OS=16.1' \
+            -configuration Debug \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
     artifacts:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
     publishing:
