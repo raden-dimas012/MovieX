@@ -2,8 +2,8 @@ workflows:
   moviex-workflow:
     name: moviex_workflow
     scripts:
-      name: CI CD Started
-      script: echo "Welcome"
+      - name: CI CD Started
+        script: echo "Welcome"
     publishing:
       email:
         recipients:
